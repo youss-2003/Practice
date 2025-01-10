@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::resource("category",DataController::class);
+Route::get('/create', [DataController::class, 'create'])->name('category.create');
